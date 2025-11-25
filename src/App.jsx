@@ -1,6 +1,8 @@
 import Header from "./components/Header"
 import Maintop from "./components/Maintop"
 import Mainbottom from "./components/Mainbottom"
+import Footertop from "./components/Footertop"
+import Footerbottom from "./components/Footerbottom"
 
 
 function App() {
@@ -12,7 +14,10 @@ function App() {
         <Maintop></Maintop>
         <Mainbottom></Mainbottom>
       </main>
-      <footer></footer>
+      <footer>
+        <Footertop></Footertop>
+        <Footerbottom></Footerbottom>
+      </footer>
     </>
   )
 }
