@@ -1,0 +1,17 @@
+/* usa camelCase per comodità */
+.myList {
+  background-color: blue;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+.myList li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-weight: 600;
+}
+.myList img {
+  width: 36px;
+  height: auto;
+}

@@ -1,0 +1,33 @@
+.mybackground {
+  background-image: url(../assets/img/footer-bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+
+}
+
+.content {
+  width: 10%;
+}
+
+.column {
+  list-style: none;
+}
+
+.title {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.column li:not(.title) {
+  color: grey;
+  font-size: 13px;
+  margin-bottom: 6px;
+font-size: 0.7rem;
+}
+
+.biglogo{
+    z-index: 99999;
+}
+

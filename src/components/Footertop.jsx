@@ -1,12 +1,15 @@
-import Logo from "./Logo"
-
-
+import style from "./Footertop.module.css";
+import Biglogo from "../assets/img/dc-logo-bg.png"
 
 function Footertop() {
-    return (
-         <>
-        <ul>
-            <li>DC COMICS</li>
+  return (
+    <div className={style.mybackground}>
+      <div className={style.bigLogo}></div>
+
+      <div className={`${style.content} flex justify-between`}>
+        <div>
+          <ul className={style.column}>
+            <li className={style.title}>DC COMICS</li>
             <li>Characters</li>
             <li>Comics</li>
             <li>Movies</li>
@@ -14,41 +17,43 @@ function Footertop() {
             <li>Games</li>
             <li>Videos</li>
             <li>News</li>
-        </ul>
+          </ul>
 
-         <ul>
-            <li>SHOP</li>
+          <ul className={style.column}>
+            <li className={style.title}>SHOP</li>
             <li>Shop DC</li>
             <li>Shop DC Collectibles</li>
+          </ul>
+        </div>
+
+        <ul className={style.column}>
+          <li className={style.title}>DC</li>
+          <li>Terms Of Use</li>
+          <li>Privacy policy (New)</li>
+          <li>Ad Choices</li>
+          <li>Advertising</li>
+          <li>Jobs</li>
+          <li>Subscriptions</li>
+          <li>Talent Workshops</li>
+          <li>CPSC Certificates</li>
+          <li>Ratings</li>
+          <li>Shop Help</li>
+          <li>Contact Us</li>
         </ul>
 
-         <ul>
-            <li>DC</li>
-            <li>Terms Of Use</li>
-            <li>Privacy policy (New)</li>
-            <li>Ad Choices</li>
-            <li>Advertising</li>
-            <li>Jobas</li>
-            <li>Subscriptions</li>
-            <li>Talent Workshops</li>
-            <li>CPSC Certificates</li>
-            <li>Rayings</li>
-            <li>Shop Help</li>
-            <li>Concatc Us</li>
+        <ul className={style.column}>
+          <li className={style.title}>SITES</li>
+          <li>DC</li>
+          <li>MAD Magazine</li>
+          <li>DC Kids</li>
+          <li>DC Universe</li>
+          <li>DC Power Visa</li>
         </ul>
+      </div>
 
-          <ul>
-            <li>SITIES</li>
-            <li>DC</li>
-            <li>MAD Magazine</li>
-            <li>DC Kids</li>
-            <li>DC Universe</li>
-            <li>DC Power Visa</li>
-        </ul>
-
-        <Logo></Logo>
-         </>
-    )
+<img  className="{style.biglogo}" src="{Biglogo}" alt="" />
+    </div>
+  );
 }
 
-export default Footertop
+export default Footertop;
