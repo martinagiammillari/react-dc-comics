@@ -1,6 +1,10 @@
+import style from "./Navbar.module.css"
+
 function Navbar() {
     return (
-        <ul>
+        <>
+        <div>
+        <ul className="flex">
             <li>CHARACTERS</li>
             <li>COMICS</li>
             <li>MOVIES</li>
@@ -12,6 +16,8 @@ function Navbar() {
             <li>NEWS</li>
             <li>SHOP</li>
         </ul>
+        </div>
+        </>
     )
 }
 
