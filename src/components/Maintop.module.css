@@ -3,6 +3,34 @@
     height: 250px;
     object-fit: cover;
     object-position: top;
-
-
 }
+
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  padding: 20px;
+  background-color: black;
+}
+
+
+.card {
+  background:black;
+}
+
+
+.cardImg {
+  width: 100%;
+  aspect-ratio: 1 / 1;  
+  object-fit: cover;      
+}
+
+
+.cardTitle {
+  padding: 8px;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+}
+
