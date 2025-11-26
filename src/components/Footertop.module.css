@@ -1,5 +1,5 @@
 .mybackground {
-  background-image: url(../assets/img/footer-bg.jpg);
+  background-image: url(../assets/img/footer-bg.jpg), url(../assets/img/dc-logo-bg.png);
   background-size: cover;
   padding: 60px 0;
 
@@ -29,5 +29,6 @@ font-size: 0.7rem;
 
 .biglogo{
     z-index: 99999;
+    position: absolute;
 }
 

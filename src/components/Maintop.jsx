@@ -1,10 +1,18 @@
-import style from "./Maintop.module.css"
+
+import style from "./Maintop.module.css";
+import comicsbg from "../assets/img/jumbotron.jpg";
 
 function Maintop() {
-    return (
+  return (
+    <>
+      
+        <img className={style.comicsbg} src={comicsbg} alt="" />
     
-      <p> content goes here  </p>
-    )
+      <div>
+        qua inserisco le card dinamicamente
+      </div>
+    </>
+  );
 }
 
-export default Maintop
+export default Maintop; 
