@@ -1,24 +1,33 @@
 import style from "./Navbar.module.css"
 
 function Navbar() {
+
+    const NavbarLinks = [
+        { name: "CHARACTERS", active: false },
+        { name: "COMICS", active: true },
+        { name: "MOVIES", active: false },
+        { name: "TV", active: false },
+        { name: "GAMES", active: false },
+        { name: "COLLECTIBLES", active: false },
+        { name: "VIDEOS", active: false },
+        { name: "FANS", active: false },
+        { name: "NEWS", active: false },
+        { name: "SHOP", active: false }
+    ];
+
     return (
-        <>
         <div>
-        <ul className="flex">
-            <li>CHARACTERS</li>
-            <li>COMICS</li>
-            <li>MOVIES</li>
-            <li>TV</li>
-            <li>GAMES</li>
-            <li>COLLECTIBLES</li>
-            <li>VIDEOS</li>
-            <li>FANS</li>
-            <li>NEWS</li>
-            <li>SHOP</li>
-        </ul>
+            <ul className="flex">
+                {NavbarLinks.map((link, index) => (
+                    <li key={index}> 
+                        <a className={link.active ? style.active : ""} href="#">
+                            {link.name}
+                        </a>
+                    </li>
+                ))}
+            </ul>
         </div>
-        </>
     )
 }
 
-export default Navbar
+export default Navbar;
